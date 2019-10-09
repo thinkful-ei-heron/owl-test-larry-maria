@@ -1,15 +1,6 @@
 import React from 'react';
 import STORE from './store.js';
 
-function getParticipant (id) {
-  console.log(`ID is ${id}`);
-  const part = STORE.participants.find (
-        myObj => myObj.id === id
-  );
-  console.log(part);
-  return part.name;
-}
-
 function LogEvent (props) {
   return (
   <p>
@@ -21,7 +12,7 @@ function LogEvent (props) {
 function ChatLog() {
   const events = STORE.chatEvents.map(evnt => 
     <LogEvent key={evnt.key} 
-              name={getParticipant(evnt.participantId)} 
+              name={STORE.getParticipant(evnt.participantId)} 
               type={evnt.type} />
   );
 

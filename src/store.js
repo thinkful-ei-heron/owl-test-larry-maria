@@ -99,7 +99,15 @@ const chatEvents = [
     }
 ];
 
+function getParticipant (id) {
+  const part = participants.find (
+        myObj => myObj.id === id
+  );
+  return part.name;
+}
+
 export default {
   participants,
-  chatEvents
+  chatEvents,
+  getParticipant
 }

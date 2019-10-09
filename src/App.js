@@ -1,6 +1,7 @@
 import React from 'react';
 import Split from './Split';
 import ChatLog from './ChatLog'
+import Stage from './Stage'
 import './App.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <ChatLog />
       </Split>
       <Split className='right'>
-        This is the content for the right `Split`. Inventore aliquid cupiditate suscipit repellat. Quaerat quis officiis quam fuga. Aliquid quo possimus id soluta aspernatur.
+        <Stage />
       </Split>
     </main>
   )
