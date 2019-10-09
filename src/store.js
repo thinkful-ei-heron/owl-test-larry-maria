@@ -39,3 +39,67 @@ const participants = [
         onStage: true
     }
 ];
+
+const chatEvents = [
+    {
+        key: 1,
+        participantId: 3,
+        type: 'message',
+        message: 'Hello world',
+        time: 1548852646559,
+        timestamp: 1548852484247
+    },
+    {
+        key: 2,
+        participantId: 2,
+        type: 'thumbs-up',
+        timestamp: 1548852484247
+    },
+    {
+        key: 3,        
+        participantId: 4,
+        type: 'thumbs-down',
+        timestamp: 1548852484247
+    },
+    {
+        key: 4,        
+        participantId: 1,
+        type: 'raise-hand',
+        timestamp: 1548852544247
+    },
+    {
+        key: 5,        
+        participantId: 1,
+        type: 'clap',
+        timestamp: 1548852544247
+    },
+    {
+        key: 6,        
+        participantId: 1,
+        type: 'join',
+        timestamp: 1548852544247
+    },
+    {
+        key: 7,        
+        participantId: 5,
+        type: 'leave',
+        timestamp: 1548852604247
+    },
+    {
+        key: 8,        
+        participantId: 3,
+        type: 'join-stage',
+        timestamp: 1548852664247
+    },
+    {
+        key: 9,        
+        participantId: 3,
+        type: 'leave-stage',
+        timestamp: 1548852724247
+    }
+];
+
+export default {
+  participants,
+  chatEvents
+}

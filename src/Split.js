@@ -1,8 +1,6 @@
 import React from 'react'
 import './Split.css';
 
-
-
 function Split(props) {
     const combinedClassName = `split ${props.className}`;
     const newStyles = { flex: props.flexBasis };
@@ -15,7 +13,5 @@ function Split(props) {
       </div>
     );
   }
-  
-
 
 export default Split;

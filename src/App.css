@@ -5,11 +5,11 @@
   }
   
   .left {
-    background-color: darkslategray;
-    color: azure;
+    background-color: #FFFFFF;
+    color: darkslategray;
   }
   
   .right {
-    background-color: wheat;
+    background-color: darkslategray;    
     color: firebrick;
   }
